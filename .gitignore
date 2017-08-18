@@ -1,0 +1,6 @@
+.DS_Store
+derby.log
+metastore_db
+*.pyc
+spark-warehouse
+__pycache__

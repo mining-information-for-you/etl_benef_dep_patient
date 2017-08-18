@@ -1,0 +1,13 @@
+{
+  "sao-francisco-data-lake":{
+    "projectVersion" : "0.0.1",
+    "sourcePath" : "src/"
+  },
+  "cassandraDB":{
+    "keyspace" : "data_lake",
+    "nodeIP" : "127.0.0.1"
+  },
+  "benef-csv":{
+    "pathfilename" : "/Users/rodrigo/workspace/sao-francisco-data-lake/etl_benef_dep_patient/test/Ben_Dep/benefics2.csv"
+  }
+}
