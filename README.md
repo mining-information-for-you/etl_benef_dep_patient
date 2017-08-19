@@ -21,3 +21,6 @@ cqlsh 127.0.0.1
 # How to run
 # ETL Benefits
  /Users/rodrigo/programs/spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars /Users/rodrigo/programs/spark-cassandra-connector/spark-cassandra-connector/target/full/scala-2.11/spark-cassandra-connector-assembly-2.0.3-53-g7bddee2b.jar src/main_benef.py config.json
+
+# ETL dependents
+/Users/rodrigo/programs/spark-2.2.0-bin-hadoop2.7/bin/spark-submit --jars /Users/rodrigo/programs/spark-cassandra-connector/spark-cassandra-connector/target/full/scala-2.11/spark-cassandra-connector-assembly-2.0.3-53-g7bddee2b.jar src/main_depen.py config.json

@@ -9,5 +9,8 @@
   },
   "benef-csv":{
     "pathfilename" : "/Users/rodrigo/workspace/sao-francisco-data-lake/etl_benef_dep_patient/test/Ben_Dep/benefics2.csv"
+  },
+  "depend-csv":{
+    "pathfilename" : "/Users/rodrigo/workspace/sao-francisco-data-lake/etl_benef_dep_patient/test/Ben_Dep/depends2.csv"
   }
 }
