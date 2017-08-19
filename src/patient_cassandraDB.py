@@ -10,7 +10,6 @@ class patient_cassandraDB(CommonCassandraDB):
         self.set_cassandra_client(nodeIP, keyspace)
 
     def insert_patient_benef(self, sqlCtx, df):
-        is_benef = "1"
         table = self.client.get_keyspace() + "." + "patient"
         sql_query = """
         INSERT INTO @$$$$$$$$$$$$@
@@ -25,7 +24,7 @@ class patient_cassandraDB(CommonCassandraDB):
             self.client.session.execute( bound_statement.bind((
             uuid1(),
             row.COD_BEN,
-            is_benef,
+            row.is_benef,
             row.DTNASC,
             row.SEXO,
             row.CIDADE,
