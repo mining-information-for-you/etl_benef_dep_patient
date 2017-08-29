@@ -1,7 +1,7 @@
 {
-  "sao-francisco-data-lake":{
+  "project":{
     "projectVersion" : "0.0.1",
-    "sourcePath" : "src/"
+    "sourcePath" : "/Users/rodrigo/workspace/sao-francisco-ness/etl_benef_dep_patient/src/"
   },
   "cassandraDB":{
     "keyspace" : "data_lake",

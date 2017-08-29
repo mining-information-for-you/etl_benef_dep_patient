@@ -10,6 +10,7 @@ def main():
     #Loading config file from json
     conf_file = load_config(sys.argv[1])
 
+    source_files = conf_file["project"]["sourcePath"]
     csv_file = conf_file["depend-csv"]["pathfilename"]
     keyspace = conf_file["cassandraDB"]["keyspace"]
     nodeIP = conf_file["cassandraDB"]["nodeIP"]
@@ -18,7 +19,7 @@ def main():
     sql = SQLContext(sc)
 
     #Python files
-    #sc.addPyFile(os.path.join(drugdesignCassandra_source_path,"commonFunctions.py"))
+    sc = load_source_files(sc, source_files)
 
     p_cassandra = patient_cassandraDB(nodeIP, keyspace)
     p_io = patient_io()

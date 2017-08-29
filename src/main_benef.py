@@ -2,7 +2,7 @@ from pyspark import SparkContext, SparkConf, SparkFiles
 from pyspark.sql import SQLContext
 
 import os, sys
-from loadConfig import load_config
+from loadConfig import load_config, load_source_files
 from patient_io import patient_io
 from patient_cassandraDB import patient_cassandraDB
 
@@ -10,6 +10,7 @@ def main():
     #Loading config file from json
     conf_file = load_config(sys.argv[1])
 
+    source_files = conf_file["project"]["sourcePath"]
     csv_file = conf_file["benef-csv"]["pathfilename"]
     keyspace = conf_file["cassandraDB"]["keyspace"]
     nodeIP = conf_file["cassandraDB"]["nodeIP"]
@@ -18,7 +19,7 @@ def main():
     sql = SQLContext(sc)
 
     #Python files
-    #sc.addPyFile(os.path.join(drugdesignCassandra_source_path,"commonFunctions.py"))
+    sc = load_source_files(sc, source_files)
 
     p_cassandra = patient_cassandraDB(nodeIP, keyspace)
     p_io = patient_io()
