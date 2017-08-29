@@ -2,7 +2,7 @@ from pyspark import SparkContext, SparkConf, SparkFiles
 from pyspark.sql import SQLContext
 
 import os, sys
-from loadConfig import load_config
+from loadConfig import load_config, load_source_files
 from patient_io import patient_io
 from patient_cassandraDB import patient_cassandraDB
 
