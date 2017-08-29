@@ -1,3 +1,3 @@
-CREATE KEYSPACE data_lake WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+CREATE KEYSPACE sf_ness WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
 
-USE data_lake;
+USE sf_ness;
