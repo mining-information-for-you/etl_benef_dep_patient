@@ -13,7 +13,7 @@ class patient_cassandraDB(CommonCassandraDB):
         table = self.client.get_keyspace() + "." + "patient"
         sql_query = """
         INSERT INTO @$$$$$$$$$$$$@
-        (id_dl, cod_progenitor, progenitor_is_benef, birthday, gender, city, state, skin_color, blood_type)
+        (id_ness_patient, cod_progenitor, progenitor_is_benef, birthday, gender, city, state, skin_color, blood_type)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
         """
         sql_query = sql_query.replace("@$$$$$$$$$$$$@", table)
@@ -38,7 +38,7 @@ class patient_cassandraDB(CommonCassandraDB):
         table = self.client.get_keyspace() + "." + "patient"
         sql_query = """
         INSERT INTO @$$$$$$$$$$$$@
-        (id_dl, cod_progenitor, progenitor_is_benef, birthday, gender, city, state, skin_color, blood_type)
+        (id_ness_patient, cod_progenitor, progenitor_is_benef, birthday, gender, city, state, skin_color, blood_type)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
         """
         sql_query = sql_query.replace("@$$$$$$$$$$$$@", table)

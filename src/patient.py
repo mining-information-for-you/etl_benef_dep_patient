@@ -2,8 +2,8 @@ from uuid import uuid1
 
 class patient():
 
-    def __init__(self, id_dl=None, cod_progenitor=None, progenitor_is_benef=None, birthday=None, gender=None, city=None, state=None, skin_color=None, blood_type=None):
-        self.id_dl = str(id_dl)
+    def __init__(self, id_ness_patient=None, cod_progenitor=None, progenitor_is_benef=None, birthday=None, gender=None, city=None, state=None, skin_color=None, blood_type=None):
+        self.id_ness_patient = str(id_ness_patient)
         self.cod_progenitor = str(cod_progenitor)
         self.progenitor_is_benef = str(progenitor_is_benef)
         self.birthday = str(birthday)
@@ -13,11 +13,11 @@ class patient():
         self.skin_color = str(skin_color)
         self.blood_type = str(blood_type)
 
-    def get_id_dl(self):
-        return self.id_dl
+    def get_id_ness_patient(self):
+        return self.id_ness_patient
 
-    def set_id_dl(self, id_dl):
-        self.id_dl = id_dl
+    def set_id_ness_patient(self, id_ness_patient):
+        self.id_ness_patient = id_ness_patient
 
     def get_cod_progenitor(self):
         return self.cod_progenitor
